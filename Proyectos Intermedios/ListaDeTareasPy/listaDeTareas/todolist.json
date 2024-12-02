@@ -1,0 +1,14 @@
+[
+    {
+        "task": "Comer",
+        "completed": false
+    },
+    {
+        "task": "Dormir",
+        "completed": false
+    },
+    {
+        "task": "Estudiar",
+        "completed": true
+    }
+]
