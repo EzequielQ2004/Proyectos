@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego del Ahorcado</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Juego del Ahorcado</h1>
+        
+        <!-- Dibujo del ahorcado -->
+        <div class="hangman-drawing">
+            <svg width="300" height="300" viewBox="0 0 300 300">
+                <!-- Base -->
+                <line x1="50" y1="280" x2="250" y2="280" stroke="black" stroke-width="4"/>
+                <!-- Poste vertical -->
+                <line x1="150" y1="280" x2="150" y2="50" stroke="black" stroke-width="4"/>
+                <!-- Travesaño -->
+                <line x1="150" y1="50" x2="230" y2="50" stroke="black" stroke-width="4"/>
+                <!-- Cuerda -->
+                <line x1="230" y1="50" x2="230" y2="100" stroke="black" stroke-width="4"/>
+                
+                <!-- Partes del cuerpo (se mostrarán gradualmente) -->
+                <circle id="head" cx="230" cy="130" r="30" stroke="black" fill="none" stroke-width="4" style="display: none;"/>
+                <line id="body" x1="230" y1="160" x2="230" y2="220" stroke="black" stroke-width="4" style="display: none;"/>
+                <line id="left-arm" x1="230" y1="180" x2="200" y2="210" stroke="black" stroke-width="4" style="display: none;"/>
+                <line id="right-arm" x1="230" y1="180" x2="260" y2="210" stroke="black" stroke-width="4" style="display: none;"/>
+                <line id="left-leg" x1="230" y1="220" x2="200" y2="250" stroke="black" stroke-width="4" style="display: none;"/>
+                <line id="right-leg" x1="230" y1="220" x2="260" y2="250" stroke="black" stroke-width="4" style="display: none;"/>
+            </svg>
+        </div>
+
+        <!-- Palabra a adivinar -->
+        <div id="word-display" class="word-display"></div>
+
+        <!-- Intentos restantes -->
+        <div id="attempts" class="attempts">
+            Intentos restantes: <span id="attempts-count">6</span>
+        </div>
+
+        <!-- Letras utilizadas -->
+        <div id="used-letters" class="used-letters">
+            Letras usadas: <span id="used-letters-display"></span>
+        </div>
+
+        <!-- Teclado de letras -->
+        <div id="keyboard" class="keyboard"></div>
+
+        <!-- Mensaje final -->
+        <div id="message" class="message"></div>
+
+        <!-- Botón de reiniciar -->
+        <button id="restart-btn" class="restart-btn" style="display: none;">Reiniciar Juego</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
