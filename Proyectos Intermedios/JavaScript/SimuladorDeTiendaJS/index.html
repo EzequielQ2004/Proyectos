@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Tienda</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Simulador de Tienda</h1>
+    <div id="productos">
+        <h2>Productos Disponibles</h2>
+        <ul>
+            <li>Producto 1 - $10 <button onclick="agregarAlCarrito(1)">Agregar al Carrito</button></li>
+            <li>Producto 2 - $20 <button onclick="agregarAlCarrito(2)">Agregar al Carrito</button></li>
+            <li>Producto 3 - $30 <button onclick="agregarAlCarrito(3)">Agregar al Carrito</button></li>
+        </ul>
+    </div>
+    <div id="carrito"><h2>Carrito de Compras</h2>
+    <ul id="lista-carrito"></ul>
+    <p>Total: $<span id="total">0</span></p>
+    <button onclick="calcularTotal()">Calcular Total</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
