@@ -1,51 +1,53 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Descrubí Nueva Música</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Descubrí Nueva Música</title>
+  <link rel="stylesheet" href="styles.css"> <!-- opcional -->
 </head>
 <body>
 
-    <!--- Contenedor principal -->
-    <div id="app">
+  <!-- Contenedor principal -->
+  <div id="app">
 
-        <!-- Botón para iniciar la experiencia músical -->
-         <div id="inicio-conteiner">
-            <button id="btn-iniciar">Descubrí una canción</button>
-         </div>
+    <!-- Botón para iniciar la experiencia musical -->
+    <div id="inicio-container">
+      <button id="btn-iniciar">Descubrí una canción</button>
+    </div>
 
-         <!-- Reproductor de música -->
-          <div id="reproductor-conteiner" style="display: none;">
+    <!-- Reproductor de música -->
+    <div id="reproductor-container" style="display: none;">
 
-            <!-- Información de la canción -->
-            <div id="info-cancion">
-                <h2 id="titulo-cancion">Titulo de la canción</h2>
-                <p id="artista-cancion">Artista</p>
-            </div>
+      <!-- Información de la canción -->
+      <div id="info-cancion">
+        <h2 id="titulo-cancion">Título de la canción</h2>
+        <p id="artista-cancion">Artista</p>
+      </div>
 
-            <!-- Reproductor (simulado) -->
-             <audio id="audio-player" controls>
-                <source id="audio-source" src="" type="audio/mpeg">
-                Tu navegador no soporta el elemento audio.
-             </audio>
+      <!-- Reproductor (simulado) -->
+      <audio id="audio-player" controls>
+        <source id="audio-source" src="" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+      </audio>
 
-             <!-- Controles personalizados -->
-              <div id="controles-extra">
-                <button id="btn-like">Me gusta</button>
-                <button id="btn-dislike">No me gusta</button>
-                <button id="btn-siguiente">Siguiente</button>
-              </div>
+      <!-- Controles personalizados -->
+      <div id="controles-extra">
+        <button id="btn-like">❤️ Me gusta</button>
+        <button id="btn-dislike">💔 No me gusta</button>
+        <button id="btn-siguiente">⏭️ Siguiente</button>
+      </div>
 
-              <!-- Enlaces para escuchar en otras plataformas -->
-               <div id="enlaces-plataformas">
-                <a id="link-spotify" href="#" target="_blank">Escuchar en Spotify</a>
-                <a id="link-youtube" href="#" target="_blank">Escuchar en YouTube</a>
-               </div>
-
-          </div>
+      <!-- Enlaces para escuchar en otras plataformas -->
+      <div id="enlaces-plataformas">
+        <a id="link-spotify" href="#" target="_blank">Escuchar en Spotify</a>
+        <a id="link-youtube" href="#" target="_blank">Escuchar en YouTube</a>
+      </div>
 
     </div>
-    
+
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
