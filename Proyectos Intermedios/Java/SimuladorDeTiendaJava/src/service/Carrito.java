@@ -8,7 +8,7 @@ import java.util.List;
 
 public class Carrito {
     private List<ItemCarrito> items;
-    private static final double IVA = 0.21; // 21% para Argentina
+    private static final double IVA = 0.21;
 
     public Carrito() {
         this.items = new ArrayList<>();
