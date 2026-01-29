@@ -15,3 +15,6 @@
 /Proyectos Intermedios/Java/SimuladorDeTiendaJava/nbproject/private/
 /Proyectos Intermedios/Java/SimuladorDeTiendaJava/build/
 MusicaAleatoria/
+__pycache__/
+*.py[cod]
+.idea/
