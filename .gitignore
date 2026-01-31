@@ -1,20 +1,42 @@
-/CalculadoraJava/CalculadoraSimple/nbproject/private/
-/CalculadoraJava/CalculadoraSimple/build/
-/ConversorDeUnidadesJava/ConversorUnidades/nbproject/private/
-/ConversorDeUnidadesJava/ConversorUnidades/build/
-/ConversorDeUnidadesJava/ConversorUnidades/dist/
-/JuegoAdivinarNúmeroJava/adivinarNumero/nbproject/private/
-/JuegoAdivinarNúmeroJava/adivinarNumero/build/
-/GeneradorContraseñasJava/GeneradorContraseñas/nbproject/private/
-/GeneradorContraseñasJava/GeneradorContraseñas/build/
-/Proyectos Intermedios/Java/New Folder/listaDeTareas/nbproject/private/
-/Proyectos Intermedios/Java/ListaDeTareasJava/nbproject/private/
-/Proyectos Intermedios/Java/ListaDeTareasJava/build/
-/Proyectos Intermedios/Java/JuegoDelAhorcadoJava/juegoDelAhorcado/nbproject/private/
-/Proyectos Intermedios/Java/JuegoDelAhorcadoJava/juegoDelAhorcado/build/
-/Proyectos Intermedios/Java/SimuladorDeTiendaJava/nbproject/private/
-/Proyectos Intermedios/Java/SimuladorDeTiendaJava/build/
 MusicaAleatoria/
+
+# --- JAVASCRIPT / NODE ---
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.env
+dist/
+build/
+
+# --- PYTHON ---
 __pycache__/
 *.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+.pytest_cache/
+.mypy_cache/
+
+# --- JAVA ---
+*.class
+*.log
+*.jar
+*.war
+*.ear
+target/
+.gradle/
+build/
+!gradle-wrapper.jar
+
+# --- IDEs (VS Code, IntelliJ) ---
+.vscode/
 .idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
