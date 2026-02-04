@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎮 Tic-Tac-Toe | Juego de Tres en Raya</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1><i class="fas fa-gamepad"></i> Tic-Tac-Toe</h1>
+            <p class="subtitle">🎮 Juego de Tres en Raya con IA</p>
+        </header>
+
+        <!-- Modo de Juego -->
+        <div class="game-mode">
+            <button class="mode-btn active" id="mode-pvp">
+                <i class="fas fa-users"></i> Jugador vs Jugador
+            </button>
+            <button class="mode-btn" id="mode-pvc">
+                <i class="fas fa-robot"></i> Jugador vs IA
+            </button>
+        </div>
+
+        <!-- Configuración IA -->
+        <div class="ai-settings" id="ai-settings">
+            <label for="difficulty">Dificultad IA:</label>
+            <select id="difficulty">
+                <option value="easy">Fácil 😊</option>
+                <option value="medium" selected>Medio 🤔</option>
+                <option value="hard">Difícil 🧠</option>
+            </select>
+        </div>
+
+        <!-- Tablero de Juego -->
+        <div class="game-container">
+            <div class="status" id="status">
+                <i class="fas fa-xmark"></i> Turno de <span class="player-name">Jugador X</span>
+            </div>
+
+            <div class="board" id="board">
+                <!-- Las 9 celdas se crearán dinámicamente con JavaScript -->
+            </div>
+        </div>
+
+        <!-- Marcador -->
+        <div class="scoreboard">
+            <div class="score-item">
+                <span class="player-x">Jugador X</span>
+                <span class="score" id="score-x">0</span>
+            </div>
+            <div class="score-item">
+                <span class="player-o">Jugador O</span>
+                <span class="score" id="score-o">0</span>
+            </div>
+            <div class="score-item">
+                <span class="player-draw">Empates</span>
+                <span class="score" id="score-draw">0</span>
+            </div>
+        </div>
+
+        <!-- Botones de Control -->
+        <div class="controls">
+            <button class="btn btn-reset" id="reset-btn">
+                <i class="fas fa-redo"></i> Reiniciar Juego
+            </button>
+            <button class="btn btn-new-game" id="new-game-btn">
+                <i class="fas fa-gamepad"></i> Nuevo Juego
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
